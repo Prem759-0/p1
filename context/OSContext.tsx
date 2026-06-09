@@ -4,7 +4,6 @@ import React, { createContext, useContext, useState, useCallback } from "react";
 import { AppID, WindowState, AppConfig } from "@/types/os";
 import { User, Briefcase, Code2, Terminal as TerminalIcon, Mail } from "lucide-react";
 
-// Import Apps
 import AboutApp from "@/components/apps/AboutApp";
 import ProjectsApp from "@/components/apps/ProjectsApp";
 import SkillsApp from "@/components/apps/SkillsApp";
