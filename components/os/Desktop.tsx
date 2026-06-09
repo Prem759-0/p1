@@ -26,14 +26,12 @@ export default function Desktop() {
   return (
     <div 
       ref={desktopRef} 
-      className="relative h-full w-full bg-gradient-to-br from-[#0F172A] via-[#1E1B4B] to-[#000000] overflow-hidden"
+      className="relative h-screen w-screen bg-gradient-to-br from-[#0F172A] via-[#1E1B4B] to-[#000000] overflow-hidden"
     >
-      {/* Dynamic Grid Background Element */}
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
       
       <TopBar />
       
-      {/* Desktop Space for Windows */}
       <div className="absolute inset-0 pt-8 pb-20 pointer-events-none z-10">
         {windows.map((win) => (
           <WindowNode key={win.id} windowState={win} desktopRef={desktopRef} />
